@@ -63,7 +63,7 @@ Positive real number corresponding to prior parameter \eqn{\beta_0} in Papastamo
 Optional subset of integers corresponding to time-series indexes. If not null, the sampler will be applied only to the specified subset.
 }
   \item{saveTheta}{
-Logical value indicating whether to save the MCMC output. Default: True.
+Logical value indicating whether to save the generated values of the mean per time-point across the MCMC trace. Default: FALSE.
 }
   \item{sameVariance}{
 Logical value indicating whether to assume the same variance per time-point across time-series. Default value: \code{sameVariance = TRUE}.

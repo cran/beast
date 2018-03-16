@@ -4,7 +4,7 @@
 Complexity prior distribution
 }
 \description{
-This function computes the complexity prior distribution on the number of change-points, defined as \eqn{f(\ell) = P(\ell_n = \ell)\propto e^{-\alpha\ell\log(bT/\ell)}, a, b > 0; \ell = 0,1,2,\ldots}. Note that this distribution has exponential decrease (Castillo and van der Vaart, 2012) when \eqn{b>1+e}, so we set \eqn{b=3}.
+This function computes the complexity prior distribution on the number of change-points, defined as \eqn{f(\ell) = P(\ell_n = \ell)\propto e^{-\alpha\ell\log(bT/\ell)}, a, b > 0; \ell = 0,1,2,\ldots}. Note that this distribution has exponential decrease (Castillo and van der Vaart, 2012) when \eqn{b>1+e}, so we set \eqn{b=3.72}.
 }
 \usage{
 complexityPrior(Lmax = 20, gammaParameter, nTime)

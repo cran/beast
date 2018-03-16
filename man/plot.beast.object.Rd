@@ -9,7 +9,7 @@ Plot function
 This function plots objects returned by the \code{beast} function. All output is diverted to a pdf file provided in the \code{fileName} argument.
 }
 \usage{
-\method{plot}{beast.object}(x, fileName, width, height, pointsize, ylab, xlab, timeScale, myPal, ...)
+\method{plot}{beast.object}(x, fileName, width, height, pointsize, ylab, xlab, timeScale, myPal, boxwex, ...)
 }
 \arguments{
   \item{x}{
@@ -38,6 +38,9 @@ A multiplicative-factor which will be used to scale the \eqn{x}-axis labels. For
 }
   \item{myPal}{
 Vector of colors that will be used to produce the plot with all time-series overlayed. If the distinct values of the inferred numbers of change-points is less than 10,  the \code{Set1} pallete of the \code{RColorBrewer} library is used. Otherwise, the user has to manually define the colors.
+}
+  \item{boxwex}{
+A scale factor to be applied to all boxes. The appearance of the plot can be improved by making the boxes narrower or wider. Default: 0.2.
 }
   \item{...}{
         ignored.
