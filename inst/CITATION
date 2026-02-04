@@ -1,26 +1,17 @@
-bibentry(bibtype = "Article",
-  title        = "Bayesian detection of piecewise linear trends in replicated time-series with application to growth data modelling",
-  author       = c(
-			person(given = "Panagiotis",
-		                family = "Papastamoulis",
-		                email = "papapast@yahoo.gr"),
-			person(given = "Takanori",
-		                family = "Furukawa"),
-			person(given = "Norman",
-		                family = "van Rhijn"),
-			person(given = "Michael",
-		                family = "Bromley"),
-			person(given = "Elaine",
-		                family = "Bignell"),
-		        person(given = "Magnus",
-		                        family = "Rattray")
-		),
-  journal      = "arXiv:1709.06111 [stat.AP]",
-  year         = "2017",
-  header       = "To cite beast in publications use:",
-  textVersion  = paste("Papastamoulis P., Furukawa T., van Rhijn N., Bromley M., Bignell E. and Rattray M. (2017)",
-        "Bayesian detection of piecewise linear trends in replicated time-series with application to growth data modelling.",
-        "arXiv:1709.06111 [stat.AP]",
-        "https://arxiv.org/abs/1709.06111")
+bibentry(
+  bibtype = "Article",
+  title = "Bayesian detection of piecewise linear trends in replicated time-series with application to growth data modelling",
+  author = c(person("Panagiotis", "Papastamoulis"),
+             person("Takanori", "Furukawa"),
+             person("Takanori", "Furukawa"),
+             person("Norman", "van Rhijn"),
+             person("Michael", "Bromley"),
+             person("Elaine", "Bignell"),
+             person("Magnus", "Rattray")
+             ),
+  year = 2019,
+  journal = "International Journal of Biostatistics",
+  doi = "10.1515/ijb-2018-0052",
+  textVersion = "Papastamoulis, P. and Milienos F. (2019). Bayesian detection of piecewise linear trends in replicated time-series with application to growth data modelling. International Journal of Biostatistics, doi.org/10.1515/ijb-2018-0052."
 )
 

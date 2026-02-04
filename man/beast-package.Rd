@@ -30,7 +30,7 @@ which correspond to running the MCMC sampler, printing and plotting output summa
 Maintainer: \packageMaintainer{beast}
 }
 \references{
-Papastamoulis P., Furukawa T., van Rhijn N., Bromley M., Bignell E. and Rattray M. (2017). Bayesian detection of piecewise linear trends in replicated time-series with application to growth data modelling. arXiv:\bold{1709.06111} [stat.AP]
+Papastamoulis P., Furukawa T., van Rhijn N., Bromley M., Bignell E. and Rattray M. (2019). Bayesian detection of piecewise linear trends in replicated time-series with application to growth data modelling. International Journal of Bioastatistics. doi.org/10.1515/ijb-2018-0052.
 }
 \keyword{ package }
 \seealso{
@@ -48,8 +48,8 @@ run_mcmc <- beast(myDataList = FungalGrowthDataset, subsetIndex = myIndex,
 			zeroNormalization = TRUE, nIter = 40, burn = 20) 
 # Print output:
 print(run_mcmc)
-# Plot output to file: "beast_plot.pdf"
-plot(run_mcmc, fileName = "beast_plot_toy.pdf", timeScale=1/6, xlab = "hours", ylab = "growth")
+# Plot output 
+plot(run_mcmc, timeScale=1/6, xlab = "hours", ylab = "growth")
 # Run the following commands to obtain convergence:
 
 \dontrun{

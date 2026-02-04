@@ -90,7 +90,7 @@ The complexity prior distribution with parameter \code{gammaParameter = 2} is th
 For completeness purposes, the Poisson distribution is also allowed in the \code{Prior}. In this latter case, the \code{gammaParameter} denotes the rate parameter of the Poisson distribution. Note that in this case the interpretation of \code{gammaParameter} is reversed: Smaller (larger) values of \code{gammaParameter} will a-priori support smaller (respectively: larger) number of change-points.
 }
 \references{
-Papastamoulis P., Furukawa T., van Rhijn N., Bromley M., Bignell E. and Rattray M. (2017). Bayesian detection of piecewise linear trends in replicated time-series with application to growth data modelling. arXiv:1709.06111 [stat.AP]
+Papastamoulis P., Furukawa T., van Rhijn N., Bromley M., Bignell E. and Rattray M. (2019). Bayesian detection of piecewise linear trends in replicated time-series with application to growth data modelling. International Journal of Biostatistics. doi.org/10.1515/ijb-2018-0052
 }
 \author{
 Panagiotis Papastamoulis
@@ -108,7 +108,7 @@ run_mcmc <- beast(myDataList = FungalGrowthDataset, subsetIndex = myIndex,
 # Print output:
 print(run_mcmc)
 # Plot output to file: "beast_plot.pdf"
-plot(run_mcmc, fileName = "beast_plot_toy.pdf", timeScale=1/6, xlab = "hours", ylab = "growth")
+plot(run_mcmc,  timeScale=1/6, xlab = "hours", ylab = "growth")
 # Run the following commands to obtain convergence:
 
 \dontrun{

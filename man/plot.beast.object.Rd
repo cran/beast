@@ -6,7 +6,7 @@
 Plot function
 }
 \description{
-This function plots objects returned by the \code{beast} function. All output is diverted to a pdf file provided in the \code{fileName} argument.
+This function plots objects returned by the \code{beast} function. 
 }
 \usage{
 \method{plot}{beast.object}(x, fileName, width, height, pointsize, ylab, xlab, timeScale, myPal, boxwex, ...)
@@ -16,7 +16,7 @@ This function plots objects returned by the \code{beast} function. All output is
 An object of class \code{beast.object}, which is returned by the \code{beast} function.
 }
   \item{fileName}{
-Name of the output pdf file.
+If not NULL, the plot will be produced in the form of a pdf file. In this case, all output is diverted to a pdf file provided in the \code{fileName} argument. The default is NULL. 
 }
   \item{width}{
 Width of pdf file. Default: 9

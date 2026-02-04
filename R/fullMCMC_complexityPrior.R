@@ -842,7 +842,7 @@ print.beast.object <- function(x, ...){
 
 
 #' @export
-plot.beast.object <- function (x, fileName, width = 9, height = 6, pointsize = 12, 
+plot.beast.object <- function (x, fileName = NULL, width = 9, height = 6, pointsize = 12, 
     ylab = "x", xlab = "t", timeScale = 1, myPal, boxwex = 0.20, ...) 
 {
     if ("beast.object" %in% class(x)) {
@@ -859,7 +859,9 @@ plot.beast.object <- function (x, fileName, width = 9, height = 6, pointsize = 1
         xMin <- min(unlist(x$data))
         myPositions <- floor(seq(0, nTime, length = 10))
         myLabels <- round(myPositions * timeScale, 1)
-        pdf(fileName, width = width, height = height, pointsize = pointsize)
+        if(is.null(fileName) == FALSE){
+	        pdf(fileName, width = width, height = height, pointsize = pointsize)
+	}
         nColors <- length(table(names(unlist(lapply(x$NumberOfCutPoints_MAP, 
             function(y) {
                 table(y)
@@ -940,8 +942,10 @@ plot.beast.object <- function (x, fileName, width = 9, height = 6, pointsize = 1
 			}
 		}
         }
+       if(is.null(fileName) == FALSE){
         dev.off()
         cat(paste0("See produced file: ", fileName), "\n")
+       }
     }
     else {
         cat(paste("    The input is not in class `beast.object`"), 
